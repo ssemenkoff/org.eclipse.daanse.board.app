@@ -60,6 +60,7 @@ import {
   init as initWidgetRepo,
   identifier as WidgetIdentifier,
 } from 'org.eclipse.daanse.board.app.lib.repository.widget'
+import { register } from 'org.eclipse.daanse.board.app.ui.vue.widget.sample'
 
 const app = createApp(App)
 
@@ -75,6 +76,7 @@ initDatasourceFactory(container)
 initRestConnection(container)
 initRestDatasource(container)
 initWidgetRepo(container)
+register(container.get<WidgetRepository>(WidgetIdentifier))
 
 const connectionRepository = container.get<ConnectionRepository>(ConnectionIdentifier)
 connectionRepository.registerConnectionType('rest', {
