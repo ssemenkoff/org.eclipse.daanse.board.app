@@ -163,6 +163,8 @@ import b143 from 'org.eclipse.daanse.board.app.lib.api.events/manifest.json'
  * The dev server serves each package's dist-bundle/ under /bundles/<id>/;
  * the production build copies them into dist/bundles/.
  */
+import lspDax from 'org.eclipse.daanse.board.app.lib.lsp.lang.dax/manifest.json'
+
 export const bundles: ModuleManifest[] = [
   b0 as ModuleManifest,
   b1 as ModuleManifest,
@@ -309,4 +311,5 @@ export const bundles: ModuleManifest[] = [
   b142 as ModuleManifest,
   b143 as ModuleManifest,
   b144 as ModuleManifest,
+  lspDax as ModuleManifest,
 ]
